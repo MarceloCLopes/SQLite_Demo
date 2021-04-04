@@ -14,11 +14,11 @@ class MainActivity : AppCompatActivity() {
 
         val helper = MyDBHelper(applicationContext)
         val db = helper.readableDatabase
-        val rs = db.rawQuery("SELECT * FROM USERS", null)
+        /*val rs = db.rawQuery("SELECT * FROM USERS", null)
 
         if (rs.moveToNext()){
             Toast.makeText(applicationContext, rs.getString(1), Toast.LENGTH_LONG).show()
-        }
+        }*/
 
         btnInsert.setOnClickListener {
             val contentValue = ContentValues()
